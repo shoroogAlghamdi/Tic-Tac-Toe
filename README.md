@@ -30,7 +30,7 @@ To run the tests:
 Unit testing is the main type used to test the individual functions and methods of this project. To ensure conformance with user requirements and to find any possible defects, I have used the unit tesing.
 
 **For Example:**
-The following method should check the validity of a user input, knowing that only positive integer values from 1 to 9 are accepted:
+The following method should check the validity of a user input, knowing that only positive integers from 1 to 9 are accepted:
 ```
 public boolean checkInputRange(int userInput) {
         boolean correctness = true;
@@ -40,7 +40,7 @@ public boolean checkInputRange(int userInput) {
         return correctness;
     }
 ```
-The following code tests the methods above with an input of 10, which should result in false:
+The following code tests the method above with an input of 10, which should result in false:
 ```
 @Test
     public void testCheckInputGreaterThanRange() {
@@ -52,7 +52,7 @@ The following code tests the methods above with an input of 10, which should res
 ```
 <hr>
 
-In this project, I also have used the parameterized test to test the same method multiple times with different input sets without the need to create an individual test for each set of inputs:
+In this project, I also have used the parameterized test to test the same method multiple times with different input sets without the need to create an individual test for each set:
 
 **For Example:**
 The method below should be called each time a player inputs a value, either X or O to define the winner, if available:
@@ -96,7 +96,7 @@ public String checkWinner(String[] board) {
         }
 ```
 
-Since it is a Tac Tic Toe game the winner can be defined in multiple ways, for instance, if one of the players forms a horizental, vertical or diagonal line of three consecutive cells of the same value (X or O), then we have a winner. Testing this function could be time consuming if we have used a seperate method for each possibility. On the other hand, using the parameterized test will make the process much more easier:
+Since it is a Tic-Tac-Toe game the winner can be defined in multiple ways, for instance, if one of the players forms a horizental, vertical or diagonal line of three consecutive cells of the same value (X or O), then we have a winner. Testing this function could be time consuming if we have used a seperate method for each possibility. On the other hand, using the parameterized test will make the process much more easier:
 
 ```
   @Parameters
@@ -118,7 +118,7 @@ Since it is a Tac Tic Toe game the winner can be defined in multiple ways, for i
 ```
 
 <hr>
-Also, the TestSuite class has been used to be able to use multiple test classes at once, and the Testrunner class is used to run all test classes at once by instaniating the TestSuite class.
+Also, the TestSuite class has been used to be able to call multiple test classes at once, and the Testrunner class is used to run all test classes at once by instaniating the TestSuite class itself.
 
 
 # Acknowledgments
