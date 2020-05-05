@@ -1,6 +1,6 @@
 # TicTacToe
 
-This project is a true simulation of a famous game, namely; Tic Tac Toe. The actual code of the game was written by [xaviablaza-zz](https://gist.github.com/xaviablaza-zz/)
+This project is a virtual simulation of the famous game, namely; Tic Tac Toe. The actual code of the game was written by [xaviablaza-zz](https://gist.github.com/xaviablaza-zz/)
 In this project, the main goal was to apply unit testing using JUnit Framework. Moreover, The code has been **modularized** to make it readeable, understable and reusable. 
 
 # Getting Started
